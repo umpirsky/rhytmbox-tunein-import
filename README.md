@@ -36,6 +36,10 @@ Backup `rhythmdb.xml` just for the case:
 cp ~/.local/share/rhythmbox/rhythmdb.xml ~/.local/share/rhythmbox/rhythmdb.bak.xml
 ```
 
+Remove all stations from Rhytmbox (it will overwrite imported stations on startup otherwise).
+
+Close Rhytmbox.
+
 Now import stations by providing your TuneIn credentials:
 
 ```
