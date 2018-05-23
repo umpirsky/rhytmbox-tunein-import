@@ -18,6 +18,8 @@ rhythmdb = ElementTree.parse(path)
 
 for child in tree.find('body').findall('outline'):
     entry = ElementTree.Element('entry', {'type': 'iradio'})
+    if 'unavailable' == child.get('key'):
+        continue
 
     title = ElementTree.Element('title')
     if -1 == child.get('text').find('|'):
